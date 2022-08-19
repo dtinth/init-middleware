@@ -6,4 +6,4 @@ Next.js’s [init-middleware.js](https://github.com/vercel/next.js/blob/canary/e
 
 <https://apiref.page/package/init-middleware>
 
-![API reference screenshot](https://ss.dt.in.th/api/screenshots/apiref-init-middleware.png)
+[![API reference screenshot](https://ss.dt.in.th/api/screenshots/apiref-init-middleware.png)](https://apiref.page/package/init-middleware)
