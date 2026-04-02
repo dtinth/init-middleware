@@ -2,7 +2,7 @@
  * Adapts an Express middleware into an async function suitable for
  * use with Next.js API routes.
  *
- * This is taken directly from {@link https://github.com/vercel/next.js/blob/canary/examples/api-routes-cors/lib/init-middleware.js}
+ * This is taken directly from {@link https://github.com/vercel/next.js/blob/86160a5/examples/api-routes-cors/lib/init-middleware.js}
  *
  * @param middleware - The Express middleware instance
  * @returns An async function that should be called with `(req, res)` to execute the middleware
@@ -13,9 +13,9 @@ export function initMiddleware<T extends Function>(middleware: T) {
     new Promise<any>((resolve, reject) => {
       middleware(req, res, (result: any) => {
         if (result instanceof Error) {
-          return reject(result)
+          return reject(result);
         }
-        return resolve(result)
-      })
-    })
+        return resolve(result);
+      });
+    });
 }
